@@ -6,8 +6,6 @@
 
 ![autorss](./autorss.png)
 
-
-
 功能概览
 
 - 运行分析：选择领域/提示词，拉取 RSS、去重、初筛、深度分析、全局总结；生成报告并保存到 data/reports。
@@ -16,8 +14,6 @@
 - 提示词与配置：管理 prompts.json；展示配置状态（优先 st.secrets，其次环境变量）；保存时可自动 git commit。
 
 ![autorss](./autorss.gif)
-
-
 
 环境要求
 
@@ -34,16 +30,16 @@
 
 2) 创建虚拟环境并安装依赖：
 
-- python -m venv .venv
-- source .venv/bin/activate  # Windows 使用 .venv\Scripts\activate
-- pip install -r requirements.txt
+- `python -m venv .venv`
+- `source .venv/bin/activate  # Windows 使用 .venv\Scripts\activate`
+- `pip install -r requirements.txt`
 
 3) 创建 secrets 文件：
 
 - 复制示例：
-  cp .streamlit/secrets.example.toml .streamlit/secrets.toml
+  `cp .streamlit/secrets.example.toml .streamlit/secrets.toml`
 - 填写真实配置：
-  [freshrss]
+  ```[freshrss]
   host = "http://localhost:8080"
   username = "your-user"
   password = "your-pass"
@@ -57,9 +53,11 @@
   user_name = "Your Name"
   user_email = "you@example.com"
 
+  ```
+
 4) 启动：
 
-- streamlit run app.py
+- `streamlit run app.py`
 - 浏览器访问 http://localhost:8501
 
 页面说明
