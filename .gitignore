@@ -1,0 +1,17 @@
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+README.md
+autorss.excalidraw
+bio_digest.py
+BioDigest_2026-01-20.html
+test_freshapi.py
+.history
+
+.venv
+.streamlit/secrets.toml
+.env
+*.log
