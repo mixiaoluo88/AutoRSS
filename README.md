@@ -4,12 +4,20 @@
 
 - 一个基于 Streamlit 的应用：从 FreshRSS 拉取文章，去重、用 LLM 分析并生成 JSON/Markdown 简报，提供仪表盘与历史归档；支持 Git 自动提交以便分发。
 
+![autorss](./autorss.png)
+
+
+
 功能概览
 
 - 运行分析：选择领域/提示词，拉取 RSS、去重、初筛、深度分析、全局总结；生成报告并保存到 data/reports。
 - Dashboard：显示近况统计（抓取数量、去重后数量、通过数、历史报告数量、提示词领域数量等）与分布/趋势图。
 - 历史报告：筛选与预览，支持导出/下载 Markdown；可保存为 .md 并自动写入 Git。
 - 提示词与配置：管理 prompts.json；展示配置状态（优先 st.secrets，其次环境变量）；保存时可自动 git commit。
+
+![autorss](./autorss.gif)
+
+
 
 环境要求
 
